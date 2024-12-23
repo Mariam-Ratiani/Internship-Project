@@ -1,4 +1,4 @@
-package com.internship.courses_website.entity;
+package com.internship.courses_website.categories.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

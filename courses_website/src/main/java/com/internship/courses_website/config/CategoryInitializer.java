@@ -2,8 +2,8 @@ package com.internship.courses_website.config;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.internship.courses_website.entity.Category;
-import com.internship.courses_website.repository.CategoryRepository;
+import com.internship.courses_website.categories.entity.Category;
+import com.internship.courses_website.categories.repository.CategoryRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
