@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.internship.courses_website.categories.entity.Category;
 import com.internship.courses_website.categories.repository.CategoryRepository;
+import com.internship.courses_website.categories.service.CategoryService;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -16,20 +17,20 @@ import org.springframework.web.bind.annotation.RequestBody;
 @RestController
 @RequestMapping("/api/categories")
 public class CategoryController {
-    private final CategoryRepository categoryRepository;
+    private final CategoryService categoryService;
 
     @Autowired
-    public CategoryController(CategoryRepository categoryRepository) {
-        this.categoryRepository = categoryRepository;
+    public CategoryController(CategoryService categoryService) {
+        this.categoryService = categoryService;
     }
 
     @GetMapping("/all")
     public List<Category> getAllCategories() {
-        return categoryRepository.findAll();
+        return categoryService.getAllCategories();
     }
 
     @PostMapping
-    public Category postMethodName(@RequestBody Category category) {
-        return categoryRepository.save(category);
+    public Category postCategory(@RequestBody Category category) {
+        return categoryService.createCategory(category);
     }
 }
