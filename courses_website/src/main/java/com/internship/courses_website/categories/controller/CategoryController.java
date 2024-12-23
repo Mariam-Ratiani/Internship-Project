@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.internship.courses_website.categories.entity.Category;
-import com.internship.courses_website.categories.repository.CategoryRepository;
 import com.internship.courses_website.categories.service.CategoryService;
 
 import org.springframework.web.bind.annotation.GetMapping;
