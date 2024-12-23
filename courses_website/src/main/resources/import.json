@@ -1,0 +1,15 @@
+[
+    {
+      "name": "Programming",
+      "description": "Courses related to programming languages and software development."
+    },
+    {
+      "name": "History",
+      "description": "Courses related to History."
+    },
+    {
+      "name": "Art",
+      "description": "Courses related to Art."
+    }
+]
+  
