@@ -100,4 +100,8 @@ public class Module {
     public void setUpdatedAt(LocalDateTime updatedAt) {
         this.updatedAt = updatedAt;
     }
+
+    public void setId(long l) {
+        this.id = l;
+    }
 }

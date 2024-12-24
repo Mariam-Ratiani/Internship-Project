@@ -87,4 +87,8 @@ public class Course {
     public void setUpdatedAt(LocalDateTime updatedAt) {
         this.updatedAt = updatedAt;
     }
+
+    public void setCourseId(long id) {
+        this.courseId = id;
+    }
 }
