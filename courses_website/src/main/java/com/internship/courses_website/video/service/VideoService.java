@@ -5,7 +5,9 @@ import com.internship.courses_website.module.Module;
 import com.internship.courses_website.module.ModuleService;
 import com.internship.courses_website.video.entity.Video;
 import com.internship.courses_website.video.repository.VideoRepository;
+import org.springframework.stereotype.Service;
 
+@Service
 public class VideoService {
 
     private final VideoRepository videoRepository;
